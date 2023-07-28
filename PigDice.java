@@ -78,7 +78,7 @@ class PigDice{
                     currentScore+=diceNumber;
                 }
             }
-            else{
+            else if(choice.equalsIgnoreCase("h")){
                 newTurn=true;
                 System.out.println("Score For TURN "+turn);
                 turn++;
@@ -88,6 +88,9 @@ class PigDice{
                 if(holdChoice!=1){
                     finalAttempt=true;
                 }
+            }
+            else{
+                System.out.println("Invalid choice");
             }
             
         }
